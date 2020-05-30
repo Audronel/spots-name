@@ -60,8 +60,6 @@ function initMap() {
         url: "/static/skate-icon-grey.svg",
         scaledSize: new google.maps.Size(50,50)
     }
-
- 
     // var addMarker = google.maps.event.addListener(map, 'click', function(e) {
     //     favDialog.showModal();
     //     lat = e.latLng.lat(); // lat of clicked point

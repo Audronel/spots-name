@@ -1,0 +1,41 @@
+
+{% extends "layout.html" %}
+{% set active_page = "places" %}
+{% block main %}  
+    <main>
+        <div class="container-fluid">
+            <div class="row user-panel">
+                <div class="col-sm-6">
+                    <div id="loc-info">
+                        <p id="loc-name"></p>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4>Spots in Vilnius:</h4>
+                            
+                            <ul id="places">
+                            </ul>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div id="map">
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main> 
+    <script type="text/javascript">
+        var locations = {{ locations | tojson}}
+        console.log(locations)
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='places.js') }}">
+       
+    </script> 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADVv1eDS1E3HogypHFjtebia7bdFpJEkU&callback=initMap"
+    async defer></script>
+ 
+{% endblock %}  

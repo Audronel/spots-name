@@ -1,0 +1,215 @@
+.sidenav {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 70px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #4A148C;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.sidenav a {
+    margin: 0 auto;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+main {
+    left: 70px !important;
+    position: fixed;
+    width: 100%;
+}
+.nav-icon {
+    fill: #434391;
+}
+.nav-icon:hover{
+    fill: white;
+}
+#map {
+    height: 100vh;
+    width: 100%;
+}
+.topnav {
+   overflow: hidden;
+   overflow: hidden;
+   position: absolute;
+   top:0;
+   height: 60px;
+   width: 100%;
+
+}
+.topnav-right {
+    position: relative;
+    float: right;
+    padding: 15px 15px;
+    z-index: 9999;
+    
+}
+.topnav-right> a {
+    color: black;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: 700;
+}
+.topnav-right> a:hover{
+    color: white;
+    text-decoration: none
+}
+.gm-style-iw + div {display: none;}
+
+.image-block {
+    background-size: 30px 30px;
+    height:30px;
+    width:30px;
+}
+
+a>.image-block.home{
+    background-image:  url('img/home.svg') ;
+}
+a>.image-block.add{
+    background-image:  url('img/add.svg') ;
+}
+a>.image-block.marker{
+    background-image:  url('img/marker.svg') ;
+}
+a>.image-block.home:hover{
+    background-image:  url('img/home-white.svg') ;
+}
+a>.image-block.add:hover{
+    background-image:  url('img/add-white.svg') ;
+}
+a>.image-block.marker:hover{
+    background-image:  url('img/marker-white.svg') ;
+}
+.active>.image-block.home{
+    background-image:  url('img/home-white.svg') ;
+}
+.active>.image-block.add{
+    background-image:  url('img/add-white.svg') ;
+}
+.active>.image-block.marker{
+    background-image:  url('img/marker-white.svg') ;
+}
+.active>.image-block.home:hover{
+    background-image:  url('img/home-white.svg') ;
+}
+.active>.image-block.add:hover{
+    background-image:  url('img/add-white.svg') ;
+}
+.active>.image-block.marker:hover{
+    background-image:  url('img/marker-white.svg') ;
+}
+
+#favDialog {
+    border:none !important;
+}
+
+body {
+    color: black;
+}
+.btn-submit {
+    background-color: #4A148C;
+    color: white;
+}
+dialog {
+    width: 450px;
+    padding: 25px;
+}
+.btn-dialog {
+    float: right;
+    padding: 15px;
+    margin-left: 15px;
+}
+#places {
+    list-style-type: none;
+    list-style: none;
+    padding: 0;
+    color: black;
+}
+
+.place-el {
+    background-color: white;
+    padding: 20px 30px;
+    margin-top:20px;
+}
+.place-el.current {
+    background-color: grey;
+}
+.user-panel {
+    background: #434391;
+}
+.user-panel h4 {
+    color: white;
+}
+.sports-panel {
+    text-align: center;
+}
+.vertical-center {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+}
+.sport-el {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    width: 350px;
+    height: 75px;
+    margin: 20px;
+    color:black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.sport-el.active{
+    border-color: #4a148c;
+    color:  #4a148c !important;
+}
+.sport-el:hover{
+    border-color: #4a148c;
+    color:  #4a148c !important;
+}
+
+input[type=file] {
+    display:none;
+    margin:10px;
+    }
+ input[type=file] + label {
+    display:inline-block;
+    margin:20px;
+    padding: 4px 32px;
+    background-color: #FFFFFF;
+    border:solid 1px #666F77;
+    border-radius: 6px;
+    color:#666F77;
+    }
+ input[type=file]:active + label {
+    background-image: none;
+    background-color:#2D6C7A;
+    color:#FFFFFF;
+}
+.img-container {
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    overflow: hidden;
+}
+.img-container>img {
+    position: relative;
+    width: 100%;
+}
+
+

@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block main %}
+{% if session.user_id==NULL %}
+<main>
+    <div class="container-fluid ">
+        <div class="text-center vertical-center">
+            <a class="sport-el" href="/signup">Sign up</a>
+            <a class="sport-el" href="/signin">Sign in</a>
+        </div>
+    </div>
+</main>
+{% endif %}
+
+{% endblock %}

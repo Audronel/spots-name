@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block main %} 
+<main>
+    <ul>
+        {% for user in userDetails %}
+        <li>
+            {{ user[0] }}, {{ user[1] }}, {{ user[2] }} 
+        </li>
+        {% endfor %}
+    </ul>
+</main>
+{% endblock %}
